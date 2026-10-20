@@ -50,7 +50,7 @@ The pipeline processes tabular genomic data containing the following primary fea
 ## 🛠️ Model Architectures
 
 ### 1. Random Forest (`scikit-learn`)
-* Evaluated with both standard `'balanced'` weights and custom class-weight dictionaries favoring pathogenic labels.
+* Evaluated with `'balanced'` weights
 
 ### 2. XGBoost (`xgboost`)
 * Gradient-boosted decision trees trained with scikit-learn's `compute_sample_weight` array to handle multi-class frequency disparities efficiently.
