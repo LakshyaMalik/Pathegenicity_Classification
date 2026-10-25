@@ -1,0 +1,190 @@
+{
+  "experiment": "dropout_03",
+  "change": "Dropout: 0.3 -> 0.2",
+  "seed": 42,
+  "fixed_configuration": {
+    "hidden_dim": 128,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 20,
+    "optimizer": "Adam",
+    "scaling": "standard",
+    "class_weights": null
+  },
+  "fit_rows": 944604,
+  "validation_rows": 236151,
+  "split_source": "baseline_results\\scaling_experiment\\split_indices.npz",
+  "scaler_source": "baseline_results\\scaling_experiment\\scaler.joblib",
+  "validation": [
+    {
+      "dropout": 0.3,
+      "hidden_units": 128,
+      "parameters": 7812,
+      "validation_accuracy": 0.8543728377182396,
+      "validation_macro_f1": 0.718025274536277,
+      "validation_balanced_accuracy": 0.6941422048550416,
+      "training_seconds": 313.67892669996945,
+      "recall_Benign": 0.621265288045515,
+      "recall_Likely_benign": 0.9666417118971864,
+      "recall_Likely_pathogenic": 0.4167435088570735,
+      "recall_Pathogenic": 0.7719183106203915
+    },
+    {
+      "dropout": 0.2,
+      "hidden_units": 128,
+      "parameters": 7812,
+      "validation_accuracy": 0.8551350618883681,
+      "validation_macro_f1": 0.7182762452928837,
+      "validation_balanced_accuracy": 0.6934585823271902,
+      "training_seconds": 326.9180774000124,
+      "recall_Benign": 0.6194256123735223,
+      "recall_Likely_benign": 0.9682263397591865,
+      "recall_Likely_pathogenic": 0.4083960203834021,
+      "recall_Pathogenic": 0.7777863567926495
+    }
+  ],
+  "validation_classification_reports": {
+    "0.3": {
+      "Benign": {
+        "precision": 0.8475947013711365,
+        "recall": 0.621265288045515,
+        "f1-score": 0.7169930014940631,
+        "support": 29353.0
+      },
+      "Likely_benign": {
+        "precision": 0.9041167031363968,
+        "recall": 0.9666417118971864,
+        "f1-score": 0.9343343433886603,
+        "support": 160290.0
+      },
+      "Likely_pathogenic": {
+        "precision": 0.5918803418803419,
+        "recall": 0.4167435088570735,
+        "f1-score": 0.48910659869563977,
+        "support": 20605.0
+      },
+      "Pathogenic": {
+        "precision": 0.6954056967968559,
+        "recall": 0.7719183106203915,
+        "f1-score": 0.7316671545667447,
+        "support": 25903.0
+      },
+      "accuracy": 0.8543728377182396,
+      "macro avg": {
+        "precision": 0.7597493607961827,
+        "recall": 0.6941422048550416,
+        "f1-score": 0.718025274536277,
+        "support": 236151.0
+      },
+      "weighted avg": {
+        "precision": 0.8469542869759324,
+        "recall": 0.8543728377182396,
+        "f1-score": 0.8462414440145908,
+        "support": 236151.0
+      }
+    },
+    "0.2": {
+      "Benign": {
+        "precision": 0.8524943735933983,
+        "recall": 0.6194256123735223,
+        "f1-score": 0.7175075472070401,
+        "support": 29353.0
+      },
+      "Likely_benign": {
+        "precision": 0.902885566350573,
+        "recall": 0.9682263397591865,
+        "f1-score": 0.9344150761635258,
+        "support": 160290.0
+      },
+      "Likely_pathogenic": {
+        "precision": 0.6027936962750716,
+        "recall": 0.4083960203834021,
+        "f1-score": 0.48690872269636915,
+        "support": 20605.0
+      },
+      "Pathogenic": {
+        "precision": 0.695371552825044,
+        "recall": 0.7777863567926495,
+        "f1-score": 0.7342736351045994,
+        "support": 25903.0
+      },
+      "accuracy": 0.8551350618883681,
+      "macro avg": {
+        "precision": 0.7633862972610218,
+        "recall": 0.6934585823271902,
+        "f1-score": 0.7182762452928837,
+        "support": 236151.0
+      },
+      "weighted avg": {
+        "precision": 0.8476761403635611,
+        "recall": 0.8551350618883681,
+        "f1-score": 0.8464543270733256,
+        "support": 236151.0
+      }
+    }
+  },
+  "validation_confusion_matrices": {
+    "0.3": [
+      [
+        18236,
+        10654,
+        331,
+        132
+      ],
+      [
+        3230,
+        154943,
+        1853,
+        264
+      ],
+      [
+        33,
+        3623,
+        8587,
+        8362
+      ],
+      [
+        16,
+        2155,
+        3737,
+        19995
+      ]
+    ],
+    "0.2": [
+      [
+        18182,
+        10734,
+        307,
+        130
+      ],
+      [
+        3098,
+        155197,
+        1737,
+        258
+      ],
+      [
+        30,
+        3722,
+        8415,
+        8438
+      ],
+      [
+        18,
+        2237,
+        3501,
+        20147
+      ]
+    ]
+  },
+  "macro_f1_change": 0.00025097075660673873,
+  "preferred_dropout": 0.2,
+  "test_evaluated": false,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0"
+  },
+  "limitation": "One seed and one split; inherited full-dataset one-hot and gene-frequency encoding."
+}

@@ -1,0 +1,14 @@
+{
+  "criterion": "highest recorded validation macro F1",
+  "checkpoint": "baseline_results\\dropout_experiment\\dropout02_ffn.pt",
+  "hidden_dim": 128,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "epochs": 20,
+  "scaling": "standard",
+  "seed": 42,
+  "validation_accuracy": 0.8551350618883681,
+  "validation_macro_f1": 0.7182762452928837,
+  "selection_caveat": "Dropout 0.2 exceeds 0.3 by only about 0.000251 macro F1 for one seed and split."
+}
