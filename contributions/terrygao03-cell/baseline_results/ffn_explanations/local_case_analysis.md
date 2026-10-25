@@ -1,0 +1,8 @@
+## Interpretation of the four local cases
+
+- **Correct Benign (row 1002402):** AF_TGP=0.02117 contributes about +0.5452 to the Benign output relative to the training background. The model assigns Benign probability 0.6234 and the prediction matches the label. This shows dependence on the observed population-frequency value in this case, not a universal frequency cutoff.
+- **Correct Pathogenic (row 1645645):** MC_Clean=nonsense contributes about +0.5606 to the Pathogenic output. The model assigns Pathogenic probability 0.7219 and matches the label. The consequence group is the dominant contributor for this prediction.
+- **Likely_pathogenic predicted as Pathogenic (row 663701):** MC_Clean=frameshift_variant contributes about +0.5143 to the Pathogenic output. The model favors Pathogenic (0.6901) over the true Likely_pathogenic class (0.3054). This illustrates a failure to distinguish these adjacent labels despite a strong consequence signal; it does not establish that the reference label is wrong.
+- **Pathogenic predicted as Likely_pathogenic (row 1456437):** The largest contributions to the Likely_pathogenic output come from MC_Clean=missense_variant and chromosome context, followed by the gene-count proxy. The predicted class has probability 0.6170, while the true Pathogenic class has probability 0.2365. The case shows that a plausible molecular-consequence association can still accompany a wrong four-class prediction.
+
+These are explanations of model outputs under the stated reference background. The primary gene names are descriptive case metadata; the FFN uses the gene-count feature rather than gene identity.

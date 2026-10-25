@@ -1,0 +1,5 @@
+,Benign,Likely_benign,Likely_pathogenic,Pathogenic
+Benign,18182,10734,307,130
+Likely_benign,3098,155197,1737,258
+Likely_pathogenic,30,3722,8415,8438
+Pathogenic,18,2237,3501,20147
