@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "dataset_fingerprint": "e040610b878f27b04371b770e1555a7c5aedd072f923180819251386d8c95ced",
+  "verified_models": [
+    {
+      "model": "XGBoost",
+      "task": "four_class",
+      "max_probability_difference": 2.9790276356855827e-08
+    },
+    {
+      "model": "LightGBM",
+      "task": "binary",
+      "max_probability_difference": 2.9767064813057686e-08
+    },
+    {
+      "model": "RandomForest",
+      "task": "binary",
+      "max_probability_difference": 2.8833654575066703e-08
+    }
+  ],
+  "checks": [
+    "all notebook code cells executed without saved errors",
+    "feature groups cover 56 columns",
+    "sample indices in intended disjoint partitions",
+    "importance means and SDs recomputed",
+    "global baseline macro-F1 independently recomputed for all models",
+    "all 12 case labels and probabilities independently checked",
+    "all local class-output attributions reconstruct probabilities",
+    "group attributions sum to zero across output classes",
+    "all 7 PNG files decode",
+    "preexisting group/FFN notebooks and input caches unchanged"
+  ],
+  "max_recomputed_local_additivity_error": 1.4432899320127035e-15,
+  "saved_png_count": 7,
+  "local_case_count": 12,
+  "verification_retrained_models": false
+}

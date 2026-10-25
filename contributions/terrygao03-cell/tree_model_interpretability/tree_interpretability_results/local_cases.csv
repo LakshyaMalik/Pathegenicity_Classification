@@ -1,0 +1,13 @@
+model,task,category,row_index,true_label,predicted_label,predicted_probability,MC_Clean,CLNVC,primary_gene_metadata,max_additivity_error
+XGBoost,four_class,Correct benign group,63,Likely_benign,Likely_benign,0.967979213460563,synonymous_variant,single_nucleotide_variant,SAMD11,1.4432899320127035e-15
+XGBoost,four_class,Correct pathogenic group,2368,Likely_pathogenic,Likely_pathogenic,0.6305400324436377,nonsense,single_nucleotide_variant,B3GALT6,3.3306690738754696e-16
+XGBoost,four_class,False negative,24878,Likely_pathogenic,Likely_benign,0.484089566399462,missense_variant,single_nucleotide_variant,ALPL,4.440892098500626e-16
+XGBoost,four_class,False positive,2924,Likely_benign,Likely_pathogenic,0.5257238582171909,missense_variant,single_nucleotide_variant,DVL1,2.220446049250313e-16
+LightGBM,binary,Correct benign group,63,Benign group,Benign group,0.9994787259281889,synonymous_variant,single_nucleotide_variant,SAMD11,1.4432899320127035e-15
+LightGBM,binary,Correct pathogenic group,2368,Pathogenic group,Pathogenic group,0.9874651483752417,nonsense,single_nucleotide_variant,B3GALT6,6.661338147750939e-16
+LightGBM,binary,False negative,13655,Pathogenic group,Benign group,0.5948487500173123,missense_variant,single_nucleotide_variant,MTOR,3.885780586188048e-16
+LightGBM,binary,False positive,4392,Benign group,Pathogenic group,0.5420866564300223,missense_variant,single_nucleotide_variant,SKI,1.1102230246251565e-16
+RandomForest,binary,Correct benign group,63,Benign group,Benign group,0.9912638300906932,synonymous_variant,single_nucleotide_variant,SAMD11,1.2212453270876722e-15
+RandomForest,binary,Correct pathogenic group,2368,Pathogenic group,Pathogenic group,0.9724675653253182,nonsense,single_nucleotide_variant,B3GALT6,4.440892098500626e-16
+RandomForest,binary,False negative,24878,Pathogenic group,Benign group,0.9605339491671546,missense_variant,single_nucleotide_variant,ALPL,9.992007221626409e-16
+RandomForest,binary,False positive,15651,Benign group,Pathogenic group,0.8432893873384609,missense_variant,Indel,MTHFR,5.551115123125783e-16
