@@ -1,0 +1,4 @@
+model,task,provenance,checked_rows,max_probability_difference,agrees_with_cached_probabilities
+XGBoost,four_class,independent refit with upstream settings,2000,2.9790276356855827e-08,True
+LightGBM,binary,loaded original calibrated model,2000,2.9767064813057686e-08,True
+RandomForest,binary,independent refit with upstream settings,2000,2.8833654575066703e-08,True

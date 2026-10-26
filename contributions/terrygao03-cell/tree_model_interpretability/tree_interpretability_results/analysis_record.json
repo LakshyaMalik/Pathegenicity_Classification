@@ -1,0 +1,51 @@
+{
+  "upstream_commit": "bdb51d3b6fa87fc6688586e16917feb995f4addb",
+  "source_sha256": "e040610b878f27b04371b770e1555a7c5aedd072f923180819251386d8c95ced",
+  "environment": {
+    "python": "3.14.3",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.7.0",
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2"
+  },
+  "explained_output": "sigmoid-calibrated class probability",
+  "global_partition": "validation",
+  "global_rows": 6000,
+  "repeats": 5,
+  "case_partition": "test",
+  "case_pool_rows": 10000,
+  "background_partition": "train",
+  "background_rows": 64,
+  "seed": 42,
+  "local_method": "exact grouped empirical interventional Shapley; 256 coalitions",
+  "model_checks": [
+    {
+      "model": "XGBoost",
+      "task": "four_class",
+      "provenance": "independent refit with upstream settings",
+      "checked_rows": 2000,
+      "max_probability_difference": 2.9790276356855827e-08,
+      "agrees_with_cached_probabilities": true
+    },
+    {
+      "model": "LightGBM",
+      "task": "binary",
+      "provenance": "loaded original calibrated model",
+      "checked_rows": 2000,
+      "max_probability_difference": 2.9767064813057686e-08,
+      "agrees_with_cached_probabilities": true
+    },
+    {
+      "model": "RandomForest",
+      "task": "binary",
+      "provenance": "independent refit with upstream settings",
+      "checked_rows": 2000,
+      "max_probability_difference": 2.8833654575066703e-08,
+      "agrees_with_cached_probabilities": true
+    }
+  ],
+  "max_additivity_error": 1.4432899320127035e-15
+}

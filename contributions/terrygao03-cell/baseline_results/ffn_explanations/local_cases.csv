@@ -1,0 +1,5 @@
+case,row_index,true_label,predicted_label,predicted_probability,true_class_probability,background_predicted_class_probability,max_additivity_error,CHROM,POS,Primary_Gene,CLNVC,MC_Clean,AF_EXAC,AF_TGP,AF_ESP,Primary_Gene_Freq
+Correct Benign,1002402,Benign,Benign,0.6234202980995178,0.6234202980995178,0.1121298912411337,1.7881393443719418e-07,12,32751364,FGD4,single_nucleotide_variant,intron_variant,0.0,0.02117,0.0,388
+Correct Pathogenic,1645645,Pathogenic,Pathogenic,0.7218897938728333,0.7218897938728333,0.0893416319503415,5.960464483090178e-08,X,70330527,IL2RG,single_nucleotide_variant,nonsense,0.0,0.0,0.0,368
+Misclassified Likely_pathogenic,663701,Likely_pathogenic,Pathogenic,0.690130889415741,0.3054375946521759,0.0893416319503415,5.960464488641293e-08,7,104747644,KMT2E,Deletion,frameshift_variant,0.0,0.0,0.0,610
+Misclassified Pathogenic,1456437,Pathogenic,Likely_pathogenic,0.6169700026512146,0.23648947477340698,0.08939060484558281,5.960464477539063e-08,19,11216243,LDLR,single_nucleotide_variant,missense_variant,0.0,0.0,0.0,2940

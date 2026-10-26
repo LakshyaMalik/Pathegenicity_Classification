@@ -1,0 +1,5 @@
+experiment,numeric_scaling,hidden_units,validation_accuracy,validation_macro_f1,training_seconds,dropout
+Unscaled control,none,64,0.6787606234993712,0.2021612295398306,307.3983301999979,0.3
+Experiment 1: standardization,standard,64,0.8533819462970726,0.7127903846029187,276.0100889999885,0.3
+Experiment 2: hidden width,standard,128,0.8543728377182396,0.718025274536277,313.67892669996945,0.3
+Experiment 3: Dropout,standard,128,0.8551350618883681,0.7182762452928837,326.9180774000124,0.2

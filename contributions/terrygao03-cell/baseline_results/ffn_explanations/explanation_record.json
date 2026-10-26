@@ -1,0 +1,101 @@
+{
+  "selected_model": {
+    "criterion": "highest recorded validation macro F1",
+    "checkpoint": "baseline_results\\dropout_experiment\\dropout02_ffn.pt",
+    "hidden_dim": 128,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "epochs": 20,
+    "scaling": "standard",
+    "seed": 42,
+    "validation_accuracy": 0.8551350618883681,
+    "validation_macro_f1": 0.7182762452928837,
+    "selection_caveat": "Dropout 0.2 exceeds 0.3 by only about 0.000251 macro F1 for one seed and split."
+  },
+  "global_method": "grouped permutation macro F1 decrease",
+  "validation_sample_rows": 30000,
+  "permutation_repeats": 10,
+  "sample_baseline_macro_f1": 0.7165703945943981,
+  "feature_groups": {
+    "CHROM": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "POS": [
+      0
+    ],
+    "AF_EXAC": [
+      1
+    ],
+    "AF_TGP": [
+      2
+    ],
+    "AF_ESP": [
+      3
+    ],
+    "CLNVC": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "MC_Clean": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "Primary_Gene_Freq": [
+      55
+    ]
+  },
+  "local_method": "exact grouped interventional Shapley values on softmax probabilities",
+  "coalitions_per_case": 256,
+  "training_background_rows": 64,
+  "case_count": 4,
+  "max_local_additivity_error": 1.7881393443719418e-07,
+  "test_evaluated": false,
+  "model_retrained": false
+}

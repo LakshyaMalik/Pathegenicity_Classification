@@ -1,0 +1,74 @@
+{
+  "CHROM": [
+    "CHROM_10",
+    "CHROM_11",
+    "CHROM_12",
+    "CHROM_13",
+    "CHROM_14",
+    "CHROM_15",
+    "CHROM_16",
+    "CHROM_17",
+    "CHROM_18",
+    "CHROM_19",
+    "CHROM_2",
+    "CHROM_20",
+    "CHROM_21",
+    "CHROM_22",
+    "CHROM_3",
+    "CHROM_4",
+    "CHROM_5",
+    "CHROM_6",
+    "CHROM_7",
+    "CHROM_8",
+    "CHROM_9",
+    "CHROM_MT",
+    "CHROM_NW_003315925.1",
+    "CHROM_NW_003315947.1",
+    "CHROM_X",
+    "CHROM_Y"
+  ],
+  "POS": [
+    "POS"
+  ],
+  "AF_EXAC": [
+    "AF_EXAC"
+  ],
+  "AF_TGP": [
+    "AF_TGP"
+  ],
+  "AF_ESP": [
+    "AF_ESP"
+  ],
+  "CLNVC": [
+    "CLNVC_Duplication",
+    "CLNVC_Indel",
+    "CLNVC_Insertion",
+    "CLNVC_Inversion",
+    "CLNVC_Microsatellite",
+    "CLNVC_Variation",
+    "CLNVC_single_nucleotide_variant"
+  ],
+  "MC_Clean": [
+    "MC_Clean_5_prime_UTR_variant",
+    "MC_Clean_Unknown",
+    "MC_Clean_frameshift_variant",
+    "MC_Clean_genic_downstream_transcript_variant",
+    "MC_Clean_genic_upstream_transcript_variant",
+    "MC_Clean_inframe_deletion",
+    "MC_Clean_inframe_indel",
+    "MC_Clean_inframe_insertion",
+    "MC_Clean_initiator_codon_variant",
+    "MC_Clean_intron_variant",
+    "MC_Clean_missense_variant",
+    "MC_Clean_no_sequence_alteration",
+    "MC_Clean_non-coding_transcript_variant",
+    "MC_Clean_nonsense",
+    "MC_Clean_splice_acceptor_variant",
+    "MC_Clean_splice_donor_variant",
+    "MC_Clean_stop_lost",
+    "MC_Clean_synonymous_variant"
+  ],
+  "Primary_Gene_Freq": [
+    "Primary_Gene_Freq"
+  ]
+}
